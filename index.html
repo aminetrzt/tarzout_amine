@@ -3,93 +3,115 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Amine Portfolio</title>
-
+  <title>Amine | Data Analyst Portfolio</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
-  <header>
-    <nav>
-      <h2>Amine</h2>
-
+  <header class="hero">
+    <nav class="navbar">
+      <h2 class="logo">Amine</h2>
       <ul>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
 
-    <div class="hero">
-      <h1>Hi, I'm Amine</h1>
-
-      <p>
-        Data Analyst & Full-Stack Developer
+    <div class="hero-content">
+      <p class="subtitle">Data Analyst | Full-Stack Developer</p>
+      <h1>Turning Data Into Decisions</h1>
+      <p class="description">
+        I design data-driven solutions, build dashboards, automate workflows,
+        and develop backend systems that transform raw data into insights.
       </p>
 
-      <a href="https://github.com/YOUR_USERNAME" target="_blank">
-        GitHub
-      </a>
+      <div class="hero-buttons">
+        <a href="https://github.com/YOUR_USERNAME" target="_blank">GitHub</a>
+        <a href="#contact" class="btn-secondary">Contact Me</a>
+        <a href="cv.pdf" download class="btn-outline">Download CV</a>
+      </div>
     </div>
   </header>
 
-  <section id="about">
+  <section id="about" class="section">
     <h2>About Me</h2>
-
     <p>
-      Master's graduate in Applied Statistics and Probability.
-      I build data dashboards, backend systems, and automation tools.
+      Master's graduate in Applied Statistics and Probability with experience in
+      data analysis, backend development, and machine learning projects.
+      I specialize in turning complex datasets into clear business insights.
     </p>
   </section>
 
-  <section id="skills">
+  <section id="skills" class="section">
     <h2>Skills</h2>
-
-    <div class="skills-container">
-      <span>Python</span>
-      <span>SQL</span>
-      <span>Power BI</span>
-      <span>PostgreSQL</span>
-      <span>JavaScript</span>
-      <span>Vue.js</span>
-      <span>Express.js</span>
+    <div class="grid">
+      <div class="card">Python</div>
+      <div class="card">SQL</div>
+      <div class="card">Power BI</div>
+      <div class="card">PostgreSQL</div>
+      <div class="card">JavaScript</div>
+      <div class="card">Pandas</div>
+      <div class="card">Scikit-learn</div>
+      <div class="card">ETL Pipelines</div>
     </div>
   </section>
 
-  <section id="projects">
+  <section id="experience" class="section">
+    <h2>Experience</h2>
+
+    <div class="timeline">
+      <div class="item">
+        <h3>Data Analyst – Herfa Mirotech</h3>
+        <span>2025 - Present</span>
+        <p>
+          Built data pipelines, handled data collection, backend development,
+          and reporting dashboards for construction data systems.
+        </p>
+      </div>
+
+      <div class="item">
+        <h3>Freelance Developer</h3>
+        <span>2024 - 2025</span>
+        <p>
+          Developed APIs for restaurant management systems and automated data scraping workflows.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
     <h2>Projects</h2>
 
-    <div class="projects-container">
-
-      <div class="card">
+    <div class="projects">
+      <div class="project">
         <h3>Marketing Campaign Analysis</h3>
-
-        <p>
-          Dashboard and campaign ROI analysis using Python and SQL.
-        </p>
+        <p>ROI analysis, A/B testing, and dashboard visualization.</p>
       </div>
 
-      <div class="card">
+      <div class="project">
         <h3>House Price Prediction</h3>
-
-        <p>
-          Machine learning model using Ridge Regression.
-        </p>
+        <p>Regression model using feature engineering and regularization.</p>
       </div>
 
-      <div class="card">
-        <h3>Web Scraping Pipeline</h3>
-
-        <p>
-          Automated scraping and reporting system using Puppeteer.
-        </p>
+      <div class="project">
+        <h3>Data Scraping System</h3>
+        <p>Puppeteer automation + reporting pipeline.</p>
       </div>
-
     </div>
+  </section>
+
+  <section id="contact" class="section contact">
+    <h2>Contact</h2>
+    <p>Let’s work together on data and automation projects.</p>
+
+    <a href="mailto:yourmail@example.com" class="btn">Send Email</a>
   </section>
 
   <footer>
-    <p>© 2026 Amine</p>
+    <p>© 2026 Amine. Built with HTML, CSS & JS.</p>
   </footer>
 
   <script src="script.js"></script>
