@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+  line-height: 1.6;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10%;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10%;
+}
+
+.hero h1 {
+  font-size: 60px;
+}
+
+.hero p {
+  margin: 20px 0;
+  font-size: 20px;
+  color: #cbd5e1;
+}
+
+.hero a {
+  width: fit-content;
+  background: #38bdf8;
+  color: black;
+  padding: 12px 24px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+section {
+  padding: 80px 10%;
+}
+
+section h2 {
+  margin-bottom: 30px;
+  font-size: 36px;
+}
+
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.skills-container span {
+  background: #1e293b;
+  padding: 10px 20px;
+  border-radius: 30px;
+}
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: #1e293b;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+.card h3 {
+  margin-bottom: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+  color: #94a3b8;
+}
