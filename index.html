@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Your Name — Data Analyst Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+
+<!-- NAV -->
+<nav>
+  <span class="nav-logo">// yourname.dev</span>
+  <ul class="nav-links">
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#dashboards">Dashboards</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#contact" class="nav-cta">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <canvas id="grid"></canvas>
+  <div class="hero-content">
+    <p class="hero-eyebrow">// data analyst</p>
+    <h1 class="hero-name">Your <span>Name</span></h1>
+    <p class="hero-tagline">I turn raw data into clear, actionable insight — through dashboards, statistical analysis, and reports that drive real decisions.</p>
+    <div class="hero-pills">
+      <span class="pill pill-cyan">Power BI</span>
+      <span class="pill pill-cyan">SQL</span>
+      <span class="pill pill-violet">Python · pandas</span>
+      <span class="pill pill-violet">Excel · DAX</span>
+      <span class="pill pill-white">Tableau</span>
+      <span class="pill pill-white">Statistics · A/B Testing</span>
+    </div>
+    <a href="#dashboards" class="hero-cta">View My Work →</a>
+  </div>
+  <div class="hero-scroll">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+    scroll
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- SKILLS -->
+<section id="skills">
+  <p class="section-label">01 / skills</p>
+  <h2 class="section-title">What I Do</h2>
+  <p class="section-sub">From raw data to the dashboard your team checks every morning.</p>
+  <div class="skills-grid">
+
+    <div class="skill-card">
+      <div class="skill-icon icon-cyan">📊</div>
+      <div class="skill-title">BI & Dashboards</div>
+      <p style="color: var(--muted); font-size: 0.88rem; margin-bottom: 1.2rem;">Interactive Power BI and Tableau dashboards that turn raw tables into decisions stakeholders can act on instantly.</p>
+      <div class="skill-tags">
+        <span class="tag">Power BI</span>
+        <span class="tag">DAX</span>
+        <span class="tag">Power Query</span>
+        <span class="tag">Tableau</span>
+        <span class="tag">Excel</span>
+        <span class="tag">Looker Studio</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon icon-violet">🧮</div>
+      <div class="skill-title">Statistical Analysis</div>
+      <p style="color: var(--muted); font-size: 0.88rem; margin-bottom: 1.2rem;">Hypothesis testing, A/B experiments, and regression analysis to separate real signal from noise.</p>
+      <div class="skill-tags">
+        <span class="tag">Python</span>
+        <span class="tag">pandas</span>
+        <span class="tag">A/B Testing</span>
+        <span class="tag">Hypothesis Testing</span>
+        <span class="tag">Regression</span>
+        <span class="tag">Excel</span>
+      </div>
+    </div>
+
+    <div class="skill-card">
+      <div class="skill-icon icon-green">🗄️</div>
+      <div class="skill-title">Data Querying & Reporting</div>
+      <p style="color: var(--muted); font-size: 0.88rem; margin-bottom: 1.2rem;">Writing efficient SQL to pull, join, and aggregate data, then packaging it into reports stakeholders trust.</p>
+      <div class="skill-tags">
+        <span class="tag">SQL</span>
+        <span class="tag">Snowflake</span>
+        <span class="tag">BigQuery</span>
+        <span class="tag">Google Sheets</span>
+        <span class="tag">Reporting</span>
+        <span class="tag">Data Cleaning</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- DASHBOARDS -->
+<section id="dashboards">
+  <p class="section-label">02 / dashboards</p>
+  <h2 class="section-title">Power BI Dashboards</h2>
+  <p class="section-sub">Screenshots or live embeds of dashboards I've built.</p>
+  <div class="dashboards-grid">
+
+    <!-- DASHBOARD 1 -->
+    <div class="dashboard-card">
+      <!-- DASHBOARD 1: To use a screenshot, set img1 src below.
+           To embed a live Power BI report instead, set iframe1 src and delete/hide the img tag. -->
+      <div class="dashboard-frame-wrap">
+        <iframe id="iframe1" title="Dashboard 1" src="" allowfullscreen></iframe>
+        <img class="dash-img" id="img1" src="photos/dashboard1.png" alt="Dashboard 1 screenshot" onload="this.style.display='block'; document.getElementById('ph1').style.display='none';" onerror="this.style.display='none';" />
+        <div class="dashboard-placeholder" id="ph1">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fcd34d" stroke-width="1.2">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <path d="M3 9h18M9 21V9"/>
+            <rect x="12" y="13" width="3" height="5" rx="1" fill="#fcd34d" stroke="none"/>
+            <rect x="16" y="11" width="3" height="7" rx="1" fill="#fcd34d" stroke="none"/>
+          </svg>
+          <div class="dash-placeholder-text">
+            <strong>Dashboard Preview</strong>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-meta">
+        <div class="dash-title">Executive KPI Dashboard</div>
+        <div class="dash-desc">Multi-BU performance tracker with drill-through by region, product line, and time period. Connects live to Snowflake via DirectQuery.</div>
+        <div class="dash-footer">
+          <div class="dash-tags">
+            <span class="tag">Power BI</span>
+            <span class="tag">DAX</span>
+            <span class="tag">Snowflake</span>
+          </div>
+          <span class="pbi-badge">Power BI</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DASHBOARD 2 -->
+    <div class="dashboard-card">
+      <!-- DASHBOARD 2: To use a screenshot, set img2 src below.
+           To embed a live Power BI report instead, set iframe2 src and delete/hide the img tag. -->
+      <div class="dashboard-frame-wrap">
+        <iframe id="iframe2" title="Dashboard 2" src="" allowfullscreen></iframe>
+        <img class="dash-img" id="img2" src="photos/dashboard2.png" alt="Dashboard 2 screenshot" onload="this.style.display='block'; document.getElementById('ph2').style.display='none';" onerror="this.style.display='none';" />
+        <div class="dashboard-placeholder" id="ph2">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fcd34d" stroke-width="1.2">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <path d="M3 9h18M9 21V9"/>
+            <rect x="12" y="13" width="3" height="5" rx="1" fill="#fcd34d" stroke="none"/>
+            <rect x="16" y="11" width="3" height="7" rx="1" fill="#fcd34d" stroke="none"/>
+          </svg>
+          <div class="dash-placeholder-text">
+            <strong>Dashboard Preview</strong>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-meta">
+        <div class="dash-title">Sales Pipeline & Forecasting</div>
+        <div class="dash-desc">Real-time sales funnel with trend-based revenue forecasting built using DAX time-intelligence functions. Includes rep-level drill-down and YoY comparison.</div>
+        <div class="dash-footer">
+          <div class="dash-tags">
+            <span class="tag">Power BI</span>
+            <span class="tag">DAX</span>
+            <span class="tag">SQL Server</span>
+          </div>
+          <span class="pbi-badge">Power BI</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DASHBOARD 3 -->
+    <div class="dashboard-card">
+      <!-- DASHBOARD 3: To use a screenshot, set img3 src below.
+           To embed a live Power BI report instead, set iframe3 src and delete/hide the img tag. -->
+      <div class="dashboard-frame-wrap">
+        <iframe id="iframe3" title="Dashboard 3" src="" allowfullscreen></iframe>
+        <img class="dash-img" id="img3" src="photos/dashboard3.png" alt="Dashboard 3 screenshot" onload="this.style.display='block'; document.getElementById('ph3').style.display='none';" onerror="this.style.display='none';" />
+        <div class="dashboard-placeholder" id="ph3">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fcd34d" stroke-width="1.2">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <path d="M3 9h18M9 21V9"/>
+            <rect x="12" y="13" width="3" height="5" rx="1" fill="#fcd34d" stroke="none"/>
+            <rect x="16" y="11" width="3" height="7" rx="1" fill="#fcd34d" stroke="none"/>
+          </svg>
+          <div class="dash-placeholder-text">
+            <strong>Dashboard Preview</strong>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-meta">
+        <div class="dash-title">Supply Chain Operations Monitor</div>
+        <div class="dash-desc">End-to-end logistics dashboard tracking inventory levels, supplier SLAs, and delivery performance across 12 warehouses in near-real-time.</div>
+        <div class="dash-footer">
+          <div class="dash-tags">
+            <span class="tag">Power BI</span>
+            <span class="tag">DAX</span>
+            <span class="tag">Azure SQL</span>
+          </div>
+          <span class="pbi-badge">Power BI</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- DASHBOARD 4 -->
+    <div class="dashboard-card">
+      <!-- DASHBOARD 4: To use a screenshot, set img4 src below.
+           To embed a live Power BI report instead, set iframe4 src and delete/hide the img tag. -->
+      <div class="dashboard-frame-wrap">
+        <iframe id="iframe4" title="Dashboard 4" src="" allowfullscreen></iframe>
+        <img class="dash-img" id="img4" src="photos/dashboard4.png" alt="Dashboard 4 screenshot" onload="this.style.display='block'; document.getElementById('ph4').style.display='none';" onerror="this.style.display='none';" />
+        <div class="dashboard-placeholder" id="ph4">
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fcd34d" stroke-width="1.2">
+            <rect x="3" y="3" width="18" height="18" rx="2"/>
+            <path d="M3 9h18M9 21V9"/>
+            <rect x="12" y="13" width="3" height="5" rx="1" fill="#fcd34d" stroke="none"/>
+            <rect x="16" y="11" width="3" height="7" rx="1" fill="#fcd34d" stroke="none"/>
+          </svg>
+          <div class="dash-placeholder-text">
+            <strong>Dashboard Preview</strong>
+          </div>
+        </div>
+      </div>
+      <div class="dashboard-meta">
+        <div class="dash-title">Customer Retention Analytics</div>
+        <div class="dash-desc">Cohort analysis, churn heatmaps, and LTV segmentation powering the retention team's weekly review and quarterly planning sessions.</div>
+        <div class="dash-footer">
+          <div class="dash-tags">
+            <span class="tag">Power BI</span>
+            <span class="tag">DAX</span>
+            <span class="tag">BigQuery</span>
+          </div>
+          <span class="pbi-badge">Power BI</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <p class="section-label">03 / projects</p>
+  <h2 class="section-title">Selected Work</h2>
+  <p class="section-sub">A sample of the analysis work I've delivered — replace these with your own projects.</p>
+  <div class="projects-grid">
+
+    <!-- FEATURED PROJECT -->
+    <div class="project-card featured">
+      <div style="flex: 1;">
+        <span class="project-badge">Featured</span>
+        <h3 class="project-title" style="margin-top: 0.8rem;">Marketing Spend & ROI Analysis</h3>
+        <p class="project-desc">Analyzed 18 months of multi-channel ad spend against revenue attribution data in Python and SQL. Identified underperforming channels, reallocated budget, and the resulting recommendations lifted campaign ROI by 27%.</p>
+        <div class="project-meta">
+          <span class="tag">SQL</span>
+          <span class="tag">Python</span>
+          <span class="tag">pandas</span>
+          <span class="tag">Power BI</span>
+          <span class="tag">Statistics</span>
+        </div>
+        <div class="project-links">
+          <a href="#" class="project-link">↗ GitHub</a>
+          <a href="#" class="project-link">↗ Case Study</a>
+        </div>
+      </div>
+      <div class="project-viz">
+        <svg width="160" height="90" viewBox="0 0 160 90">
+          <line x1="10" y1="70" x2="10" y2="20" stroke="#1E2A45" stroke-width="1"/>
+          <line x1="10" y1="70" x2="150" y2="70" stroke="#1E2A45" stroke-width="1"/>
+          <rect x="20" y="50" width="14" height="20" fill="rgba(0,212,255,0.5)" rx="2"/>
+          <rect x="42" y="35" width="14" height="35" fill="rgba(0,212,255,0.7)" rx="2"/>
+          <rect x="64" y="42" width="14" height="28" fill="rgba(124,58,237,0.5)" rx="2"/>
+          <rect x="86" y="20" width="14" height="50" fill="#00D4FF" rx="2"/>
+          <rect x="108" y="30" width="14" height="40" fill="rgba(0,212,255,0.6)" rx="2"/>
+          <rect x="130" y="46" width="14" height="24" fill="rgba(124,58,237,0.45)" rx="2"/>
+          <text x="93" y="14" font-family="monospace" font-size="7" fill="#00D4FF" text-anchor="middle">+27%</text>
+        </svg>
+      </div>
+    </div>
+
+    <!-- PROJECT 2 -->
+    <div class="project-card">
+      <span class="project-badge" style="color: #fcd34d; background: rgba(234,179,8,0.1); border-color: rgba(234,179,8,0.25);">BI Dashboard</span>
+      <h3 class="project-title">Executive KPI Dashboard</h3>
+      <p class="project-desc">Power BI dashboard suite tracking KPIs across 6 business units, connected to a live Snowflake data mart. Used daily by 40+ stakeholders to drive quarterly planning.</p>
+      <div class="project-meta">
+        <span class="tag">Power BI</span>
+        <span class="tag">Snowflake</span>
+        <span class="tag">SQL</span>
+        <span class="tag">DAX</span>
+      </div>
+      <div class="project-links">
+        <a href="#" class="project-link">↗ Preview</a>
+      </div>
+    </div>
+
+    <!-- PROJECT 3 -->
+    <div class="project-card">
+      <span class="project-badge" style="color: #6ee7b7; background: rgba(16,185,129,0.1); border-color: rgba(16,185,129,0.25);">A/B Testing</span>
+      <h3 class="project-title">Checkout Flow A/B Test</h3>
+      <p class="project-desc">Designed and analyzed a 6-week A/B test on a redesigned checkout flow. Ran significance testing on 50k+ sessions and presented findings that led to a 12% lift in conversion.</p>
+      <div class="project-meta">
+        <span class="tag">Python</span>
+        <span class="tag">SciPy</span>
+        <span class="tag">Hypothesis Testing</span>
+        <span class="tag">Excel</span>
+      </div>
+      <div class="project-links">
+        <a href="#" class="project-link">↗ GitHub</a>
+        <a href="#" class="project-link">↗ Report</a>
+      </div>
+    </div>
+
+    <!-- PROJECT 4 -->
+    <div class="project-card">
+      <span class="project-badge" style="color: #a78bfa; background: rgba(124,58,237,0.1); border-color: rgba(124,58,237,0.25);">Reporting</span>
+      <h3 class="project-title">Automated Weekly Sales Report</h3>
+      <p class="project-desc">Replaced a 4-hour manual reporting process with a SQL + Power Query pipeline that refreshes automatically and emails stakeholders a polished summary every Monday morning.</p>
+      <div class="project-meta">
+        <span class="tag">SQL</span>
+        <span class="tag">Power Query</span>
+        <span class="tag">Excel</span>
+        <span class="tag">Automation</span>
+      </div>
+      <div class="project-links">
+        <a href="#" class="project-link">↗ GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- ABOUT -->
+<section id="about">
+  <p class="section-label">04 / about</p>
+  <h2 class="section-title">Who I Am</h2>
+  <div class="about-grid">
+
+    <!-- PHOTO COLUMN -->
+    <!-- To add your photo: set the src below to your image path, e.g. src="photo.jpg" -->
+    <div class="about-photo-wrap">
+      <div class="photo-frame">
+        <img id="photoImg" src="photos/profile.jpg" alt="Profile photo" onload="this.style.display='block'; document.getElementById('photoPlaceholder').style.display='none';" onerror="this.style.display='none';" />
+        <div class="photo-placeholder" id="photoPlaceholder">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+          </svg>
+          Your Photo
+        </div>
+      </div>
+    </div>
+
+    <div class="about-body">
+      <p>I'm a data analyst with <strong>5+ years of experience</strong> turning messy spreadsheets and databases into dashboards, reports, and insights that stakeholders actually use. My focus is the full analysis lifecycle — from data cleaning and exploration to building the Power BI dashboards leadership checks every morning.</p>
+      <p>I believe good analysis is invisible: dashboards that just make sense, numbers that tell a clear story, and reports that answer the question before it's asked. My goal is always to make data feel effortless for the people relying on it.</p>
+      <p>Currently based in <strong>Your City</strong>. Open to remote and hybrid opportunities.</p>
+    </div>
+    <div class="about-stats">
+      <div class="stat-card">
+        <div class="stat-number">5+</div>
+        <div class="stat-label">Years experience</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">20+</div>
+        <div class="stat-label">Projects shipped</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">15+</div>
+        <div class="stat-label">Dashboards built</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number">∞</div>
+        <div class="stat-label">Coffee consumed</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="divider"></div>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="contact-inner">
+    <h2 class="contact-title">Let's Build Something</h2>
+    <p class="contact-sub">Open to full-time analyst roles, freelance dashboard work, and interesting conversations about data.</p>
+    <div class="contact-links">
+      <a href="mailto:you@email.com" class="contact-btn btn-primary">✉ Send an Email</a>
+      <a href="https://linkedin.com" class="contact-btn btn-ghost">LinkedIn</a>
+      <a href="https://github.com" class="contact-btn btn-ghost">GitHub</a>
+      <a href="#" class="contact-btn btn-ghost">Download CV</a>
+    </div>
+  </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+  <span>© 2025 Your Name</span>
+  <span style="font-family: var(--mono);">// turning data into decisions</span>
+  <a href="#home">Back to top ↑</a>
+</footer>
+
+<!-- ANIMATED DATA GRID CANVAS -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
